@@ -1,6 +1,5 @@
 //by JK 02/10/19
 package com.optiim.recorder.controllers;
-//by JK 02/10/19
 import java.util.Collection;
 import java.util.Optional;
 
@@ -36,14 +35,13 @@ public class NoteController {
 		return serv.findAllUserNotesByUserId(user);
 	}
 	
-	@RequestMapping(method=RequestMethod.PUT, value="/edit")
-	public Note changeNote (@RequestParam String content, @RequestParam String id ) {
-		Optional<Note> n = serv.getNoteById(id);
-		
-		if(n!=null) {
-			
-		}
-		  
-	}
+//	@RequestMapping(method=RequestMethod.PUT, value="/edit")
+//	public Note changeNote (@RequestParam String content, @RequestParam String id ) {
+//		Optional<Note> n = serv.getNoteById(id);
+//		
+//		if(n!=null) {
+//			
+//		}
+//	}
 
 }

@@ -1,3 +1,4 @@
+//by jk 02/10/19
 package com.optiim.recorder.models;
 
 import org.springframework.data.annotation.Id;
@@ -12,7 +13,7 @@ public class Note {
 	@Id
 	public String id;
 	@Getter @Setter
-	private String user;
+	public String user;
 	@Getter @Setter
 	private String content;
 	
@@ -21,7 +22,7 @@ public class Note {
 		this.user=name;
 		this.content=content;
 	}
-	
+	@Override
 	public String toString() {
 		return "Note Id: "+id+", User: "+user+", Content: "+content;
 	}
