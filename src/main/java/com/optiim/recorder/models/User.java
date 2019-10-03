@@ -16,7 +16,7 @@ public class User {
 	public String userId;
 	
 	@Getter @Setter
-	private String name;
+	public String name;
 	
 	@Getter @Setter
 	private List<Note> notes;
